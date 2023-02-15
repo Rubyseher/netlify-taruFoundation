@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const patients =mongoose.Schema({
     name:String,
@@ -9,4 +9,4 @@ const patients =mongoose.Schema({
     time:String,
 })
 
-export default mongoose.model('patientsToday',patients)
+module.exports = mongoose.model('patientsToday',patients)

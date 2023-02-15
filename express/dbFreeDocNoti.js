@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const docNoti =mongoose.Schema({
     date:String,
@@ -7,4 +7,4 @@ const docNoti =mongoose.Schema({
     specialization:String
 })
 
-export default mongoose.model('freeDocNotifications',docNoti)
+module.exports = mongoose.model('freeDocNotifications',docNoti)

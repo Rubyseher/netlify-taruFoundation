@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require('mongoose');
 
 const doctors =mongoose.Schema({
     name:String,
@@ -6,5 +6,4 @@ const doctors =mongoose.Schema({
     languages:String,
     specialization:String
 })
-
-export default mongoose.model('Doctors',doctors)
+module.exports = mongoose.model('Doctors',doctors)
