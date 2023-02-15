@@ -29,7 +29,9 @@
     "serverless-http": "^2.3.0"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^6.9.1"
   }
 }
