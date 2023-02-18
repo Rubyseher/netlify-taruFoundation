@@ -67,6 +67,7 @@ router.delete('/doc/:id', function (req, res) {
 })
 
 router.get('/doc', (req, res) => {
+    try {
     patientsToday.find((err, data) => {
         if (err) {
             res.status(500).send(err)
@@ -74,7 +75,9 @@ router.get('/doc', (req, res) => {
         else {
             res.status(200).send(data)
         }
-    })
+    })} catch(e) {
+        res.status(500).send(e)
+    }
 })
 
 router.get('/encrypt',async (req, res) => {
